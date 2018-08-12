@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, Observer, of } from 'rxjs';
 
-import { FeedItem } from './feed-item/feed-item.interface';
-import { FeedList } from './feed-list/feed-list.interface';
+import { FeedItem } from './feed/feed-item/feed-item.interface';
+import { FeedList } from './feed/feed-list/feed-list.interface';
 import { environment } from '../environments/environment';
 
 @Injectable({

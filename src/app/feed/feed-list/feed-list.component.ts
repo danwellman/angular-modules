@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 import { FeedList } from './feed-list.interface';
-import { FeedService } from '../feed.service';
+import { FeedService } from '../../feed.service';
 import { FeedItem } from '../feed-item/feed-item.interface';
 
 @Component({

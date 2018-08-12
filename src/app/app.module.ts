@@ -6,6 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 // Modules
 import { AppRoutingModule } from './app-routing.module';
+import { FeedModule } from './feed/feed.module';
 
 // Components
 import { AppComponent } from './app.component';
@@ -41,6 +42,7 @@ import { DateService } from './utils/date.service';
     BrowserModule,
     HttpClientModule,
     ReactiveFormsModule,
+    FeedModule,
     AppRoutingModule
   ],
   providers: [

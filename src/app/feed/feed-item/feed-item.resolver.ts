@@ -4,7 +4,7 @@ import { ActivatedRouteSnapshot } from '@angular/router';
 import { Observable } from 'rxjs';
 
 import { FeedItem } from './feed-item.interface';
-import { FeedService } from '../feed.service';
+import { FeedService } from '../../feed.service';
 
 @Injectable()
 export class FeedItemResolver implements Resolve<Observable<FeedItem>> {
