@@ -1,0 +1,22 @@
+<article>
+  <ng-container *ngIf="loading">
+    <p>Loading!</p>
+  </ng-container>
+  <ng-container *ngIf="!loading && item.user">
+    <header>
+      <div class="user">
+        <figure class="card">
+          <img [src]="item.user.avatar" [alt]="item.user.name" />
+          <figcaption>{{ item.user.name }}</figcaption>
+        </figure>
+      </div>
+      <div class="intro">
+        <h1>{{ item.title }} <time [attr.datetime]="item.posted">Posted on: {{ formattedPostDate }}</time></h1>
+        <div class="content">{{ item.intro }}</div>
+        <a *ngIf="inList" [routerLink]="item.id">Read full post</a>
+        <a *ngIf="!inList" [routerLink]="['/feed-list']">Return to feed</a>
+      </div>
+    </header>
+    <div *ngIf="!inList" class="content" [innerHTML]="item.content"></div>
+  </ng-container>
+</article>

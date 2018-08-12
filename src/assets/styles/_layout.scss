@@ -1,0 +1,59 @@
+body, html {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+header, footer {
+  z-index: 1;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+}
+
+main {
+  padding: 5em 0;
+}
+
+nav {
+  flex-grow: .5;
+  margin: 2em;
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    a {
+      padding: 1em;
+      white-space: nowrap;
+    }
+  }
+
+  li {
+    margin: 0 1em;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+app-about-us, app-contact-us, app-legal, app-not-found {
+  display: block;
+  padding: 2em;
+
+  .card {
+    padding: 1em 1.5em 1em;
+  }
+}

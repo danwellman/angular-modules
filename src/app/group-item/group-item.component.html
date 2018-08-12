@@ -1,0 +1,25 @@
+<article>
+  <ng-container *ngIf="loading">
+    <p>Loading!</p>
+  </ng-container>
+  <ng-container *ngIf="!loading && group.members">
+    <header [style.background-image]="group.headerImg">
+      <h1>{{ group.name }} <time [attr.datetime]="group.created">Created on: {{ formattedCreationDate }}</time></h1>
+      <a *ngIf="!inList" [routerLink]="['/groups-list']">Return to group list</a>
+      <p>{{ group.description }}</p>
+    </header>
+    <div class="content">
+      Group members:
+      <ul>
+        <li *ngFor="let member of group.members">
+          <figure class="card">
+            <img [src]="member.avatar" [alt]="member.name" />
+            <figcaption>{{ member.name }}</figcaption>
+          </figure>
+        </li>
+      </ul>
+      <a *ngIf="inList" [routerLink]="group.id">View group</a>
+    </div>
+    <div *ngIf="!inList" class="content" [innerHTML]="group.content"></div>
+  </ng-container>
+</article>

@@ -1,0 +1,44 @@
+app-feed-item {
+  article {
+    header {
+      display: flex;
+    }
+  }
+
+  .user {
+    padding: 1em;
+
+    figure {
+      margin: 0;
+      max-width: 5em;
+      padding: .5em .5em .25em;
+
+      img {
+        width: 100%;
+      }
+
+      figcaption {
+        display: none;
+      }
+    }
+  }
+
+  .intro {
+    h1 {
+      margin: .5em 0;
+
+      time {
+        display: block;
+        margin-top: .25em;
+      }
+    }
+
+    .content {
+      display: none;
+    }
+  }
+
+  .content {
+    padding: 1em;
+  }
+}

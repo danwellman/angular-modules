@@ -1,0 +1,10 @@
+header {
+  display: flex;
+  padding: 0 2em;
+  position: fixed;
+  width: 100%;
+
+  h1 {
+    flex-grow: .5;
+  }
+}

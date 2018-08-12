@@ -1,0 +1,16 @@
+<form [formGroup]="form" (ngSubmit)="sendMessage()">
+  <figure class="card">Feel free to use this form, but be advised that it doesn't do anything. Your message will not be sent. This mailbox is not monitored. None of this is real.</figure>
+
+  <fieldset class="card">
+    <label>Name:</label>
+    <input formControlName="name" /><br /><br />
+
+    <label>Email:</label>
+    <input formControlName="email" /><br /><br />
+
+    <label>Message:</label>
+    <textarea formControlName="message"></textarea>
+
+    <button>Send!</button>
+  </fieldset>
+</form>

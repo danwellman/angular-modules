@@ -1,0 +1,45 @@
+app-feed-list {
+  app-feed-item {
+    display: block;
+
+    header {
+      .intro {
+        flex-grow: 1;
+        padding: 1em;
+        position: relative;
+
+        .content {
+          display: block;
+          padding: 0;
+        }
+
+        h1 {
+          margin-top: 0;
+        }
+
+        a {
+          bottom: 1em;
+          position: absolute;
+          white-space: nowrap;
+        }
+      }
+    }
+
+    .user {
+      figure {
+        max-width: initial;
+        padding-bottom: .5em;
+
+        figcaption {
+          display: block;
+        }
+      }
+    }
+  }
+
+  article {
+    .content {
+      display: none;
+    }
+  }
+}

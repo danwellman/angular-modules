@@ -1,0 +1,25 @@
+app-groups {
+  display: block;
+  padding: 3em;
+
+  app-group-item {
+    a {
+      bottom: 1em;
+      position: absolute;
+      right: 1em;
+    }
+  }
+
+  section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    div:not(.content) {
+      width: 35em;
+      height: 25em;
+      margin-bottom: 3em;
+      position: relative;
+    }
+  }
+}
