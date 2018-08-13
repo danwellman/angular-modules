@@ -14,8 +14,6 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
 // Services
-import { FeedService } from './feed.service';
-import { GroupsService } from './groups.service';
 import { UserService } from './user.service';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
@@ -39,8 +37,6 @@ import { DateService } from './utils/date.service';
     AppRoutingModule
   ],
   providers: [
-    FeedService,
-    GroupsService,
     UserService,
     DateService
   ],

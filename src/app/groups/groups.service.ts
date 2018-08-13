@@ -2,9 +2,9 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, Observer, of } from 'rxjs';
 
-import { Group } from './groups/group-item/group-item.interface';
-import { GroupsList } from './groups/groups-list/groups-list.interface';
-import { environment } from '../environments/environment';
+import { Group } from './group-item/group-item.interface';
+import { GroupsList } from './groups-list/groups-list.interface';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'

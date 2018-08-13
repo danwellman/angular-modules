@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 import { FeedList } from './feed-list.interface';
-import { FeedService } from '../../feed.service';
+import { FeedService } from '../feed.service';
 import { FeedItem } from '../feed-item/feed-item.interface';
 
 @Component({
@@ -17,6 +17,7 @@ export class FeedListComponent implements OnInit {
 
   ngOnInit(): void {
     this.getFeedItems();
+    console.log(this.feedService['test']);
   }
 
   private getFeedItems() {

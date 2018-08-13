@@ -2,7 +2,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 import { Group } from '../group-item/group-item.interface';
 import { GroupsList } from './groups-list.interface';
-import { GroupsService } from '../../groups.service';
+import { GroupsService } from '../groups.service';
 
 @Component({
   selector: 'app-groups',
