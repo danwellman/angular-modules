@@ -8,7 +8,7 @@ import { FeedItemResolver } from './feed-item/feed-item.resolver';
 
 const routes: Routes = [
   {
-    path: 'feed-list',
+    path: '',
     component: FeedComponent,
     children: [
       {

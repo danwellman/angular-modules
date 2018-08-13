@@ -4,7 +4,7 @@ import { ActivatedRouteSnapshot } from '@angular/router';
 import { Observable } from 'rxjs';
 
 import { Group } from './group-item.interface';
-import { GroupsService } from '../groups.service';
+import { GroupsService } from '../../groups.service';
 
 @Injectable()
 export class GroupItemResolver implements Resolve<Observable<Group>> {
