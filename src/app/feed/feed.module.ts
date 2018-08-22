@@ -13,9 +13,10 @@ import { FeedItemResolver } from './feed-item/feed-item.resolver';
     FeedRoutingModule
   ],
   declarations: [
+    FeedComponent,
     FeedListComponent,
     FeedItemComponent,
-    FeedComponent
+    FeedListComponent
   ],
   providers: [
     FeedItemResolver

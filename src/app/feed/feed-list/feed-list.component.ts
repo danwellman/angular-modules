@@ -17,6 +17,7 @@ export class FeedListComponent implements OnInit {
 
   ngOnInit(): void {
     this.getFeedItems();
+
     console.log(this.feedService['test']);
   }
 

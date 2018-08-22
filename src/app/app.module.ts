@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -18,7 +17,6 @@ import { UserService } from './user.service';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { LegalComponent } from './legal/legal.component';
-import { DateService } from './utils/date.service';
 
 @NgModule({
   declarations: [
@@ -37,8 +35,7 @@ import { DateService } from './utils/date.service';
     AppRoutingModule
   ],
   providers: [
-    UserService,
-    DateService
+    UserService
   ],
   bootstrap: [AppComponent]
 })

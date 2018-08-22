@@ -4,7 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Group } from './group-item.interface';
 import { User, UsersApiResponse } from '../../user.interface';
 import { UserService } from '../../user.service';
-import { DateService } from '../../utils/date.service';
+import { DateService } from 'dsw-utils';
 
 @Component({
   selector: 'app-group-item',
